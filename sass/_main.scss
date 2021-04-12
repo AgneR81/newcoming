@@ -1,3 +1,272 @@
-body {
-    background-color: aqua;
+.wrapper {
+    width: 100%;
+    height: 100%;
+    .main {
+        width: 100%;
+        height: 100%;
+        background: url('../img/background/beach.img.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        justify-content: center;
+        .main__wrap {
+            width: 100%;
+            padding: 10% 0px 0px 0px;
+            img {
+                width: 100%;
+                max-width: 80px;
+                margin-left: calc(50% - 40px);
+                @media (max-width: $sm) {
+                    max-width: 50px;
+                    margin-left: calc(50% - 25px);
+                }
+            }
+            h1 {
+                width: 100%;
+                max-width: 400px;
+                font-size: $large;
+                color: $myblack;
+                margin-left: calc(50% - 200px);
+                font-weight: bold;
+                text-align: center;
+                padding: 15px 0px;
+                font-family: $font-Raleway;
+                @media (max-width: $sm) {
+                    margin-left: 0px;
+                    font-size: $medium;
+                    padding: 5px 0px;
+                }
+            }
+            p {
+                width: 100%;
+                max-width: 500px;
+                font-size: $small;
+                color: $grey;
+                margin-left: calc(50% - 250px);
+                text-align: center;
+                padding: 15px 0px;
+                @media (max-width: $md) {
+                    padding: 5px 20px;
+                    max-width: 450px;
+                    margin-left:0;
+                }
+                @media (max-width: $sm) {
+                    width: 100%;
+                    margin-left: 0%;     
+                }
+            }
+            .time {
+                width: 100%;
+                max-width: 450px;
+                margin-left: calc(50% - 225px);
+                padding: 30px 0px;
+                color: rgb(255, 255, 255);
+                text-transform: uppercase;
+                text-shadow: 1px 1px 5px black;
+                @media (max-width: $md) {
+                    font-size: $medium;
+                }
+                .days {
+                    width: 100%;
+                    float: left;
+                    width: calc(100% / 4);
+                }
+                .hours {
+                    width: 100%;
+                    float: left;
+                    width: calc(100% / 4);
+                }
+                .minutes {
+                    width: 100%;
+                    float: left;
+                    width: calc(100% / 4);
+                }
+                .seconds {
+                    width: 100%;
+                    float: left;
+                    width: calc(100% / 4);
+                }
+                label {
+                    width: 100%;
+                    float: left;
+                    font-family: $font-Raleway;
+                    font-size: $large;
+                    text-align: center;
+                    @media (max-width: $xl) {
+                         margin-left: 0px;
+                         font-size: $medium;
+                    }
+                }
+                span {
+                    width: 100%;
+                    float: left;
+                    font-family: $font-Noto-sans;
+                    font-size: $small;
+                    text-align: center;
+                    padding: 5px 0px;
+                    @media (max-width: $md) {
+                        font: $tiny;
+                    }
+                }
+            }
+            .email__form {
+                width: 100%;
+                max-width: 500px;
+                margin-left: calc(50% - 250px);
+                margin-top: 120px;
+                // Start here
+                @media (max-width: $md) {
+                    max-width: 400px;
+                    margin-left: calc(50% - 200px);
+                }
+                @media (max-width: $sm) {
+                    width: 80%;
+                    margin-left: 10%;
+                }
+                input {
+                    width: 100%;
+                    background-color: transparent;
+                    border-bottom: 1px solid rgb(238, 238, 238);
+                    text-align: center;
+                    font-size: $small;
+                    padding: 5px 0px;
+                    text-transform: capitalize;
+                    &::placeholder {
+                        color: white;
+                        line-height: 30px;
+                    }
+                }
+                button {
+                    width: 150px;
+                    height: 35px;
+                    margin-left: calc(50% - 75px);
+                    background-color: rgb(255, 39, 97);
+                    color: white;
+                    margin-top: 20px;
+                    box-shadow: 2px 2px 2px rgb(69, 69, 69);
+                }
+            }
+            .mouse {
+                margin-top: 80px;
+                width: 30px;
+                height: 45px;
+                border: 1px solid white;
+                margin-left: calc(50% - 15px);
+                border-radius: 18px;
+            }
+        }
+    }
+    .section {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        @media (max-width: $md) {
+            height: 100%;
+        }
+        .section_wrap {
+            display: inline-block;
+            width: 100%;
+            height: 40px;
+            height: 400px;
+            padding: 70px 0px;
+            .section_left {
+                width: 50%;
+                float: left;
+                @media (max-width: $xl) {
+                    width: 100%;
+                }     
+            }
+            .section_right {
+                width: 50%;
+                float: left;
+                background: aquamarine;
+                @media (max-width: $xl) {
+                    width: 100%;
+                }
+            }    
+            .left_content,
+            .right_content {
+                 width: 92%;
+                 margin-left: 4%;
+                 h3 {    //title
+                    width: 100%;
+                    text-align: left;
+                    font-family: $font-Raleway;
+                    font-size: $normal;
+                     color: black;
+                    text-transform: uppercase;
+                    padding: 10px 0px;
+                }
+                p {
+                        //font-family: $font-Raleway;
+                    font-size: $small;
+                    line-height: 25px;
+                     padding: 10px 0px;
+                    span {
+                         color: red;
+                     }
+                }
+                .animation {
+                    padding: 15px 0px;
+                    width: 100%;
+                    height: 100%;
+                    display: inline-block;
+                    .bar_row{
+                        width: 100%;
+                        height: 50px;
+                        border-color: royalblue;
+                        margin: 1px 0px;
+                        position: relative;
+                        font-family: $font-Raleway;
+                        font-size: $tiny;
+                        label {
+                            width: 50%;
+                            float: left;
+                        }
+                        span {
+                            width: 50%;
+                            float: right;
+                            text-align: right;                                
+                        }
+                        .row_wrap {
+                            width: 100%;
+                            .line {
+                                position: absolute;
+                                width: 100%;
+                                height: 2px;
+                                background-color: rgb(84, 84, 192);
+                                border-radius: 10px;
+                            }
+                            .active {
+                                @extend .line;
+                                background-color: cadetblue;
+                            }
+                        }
+                    }
+                }
+             }           
+        }
+    }
+    .footer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 120px;
+        background-color: coral;
+        .footer-wrap {
+            width: 100%;
+            // height: 100%;
+        }
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    @media (max-width: $md) {
+        width: 98%;
+    }
 }
