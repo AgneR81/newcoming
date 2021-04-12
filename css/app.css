@@ -101,25 +101,25 @@ h6 {
   justify-content: center;
 }
 
-.wrapper .main__wrap {
+.wrapper .main .main__wrap {
   width: 100%;
   padding: 10% 0px 0px 0px;
 }
 
-.wrapper .main__wrap img {
+.wrapper .main .main__wrap img {
   width: 100%;
   max-width: 80px;
   margin-left: calc(50% - 40px);
 }
 
 @media (max-width: 400px) {
-  .wrapper .main__wrap img {
+  .wrapper .main .main__wrap img {
     max-width: 50px;
     margin-left: calc(50% - 25px);
   }
 }
 
-.wrapper .main__wrap h1 {
+.wrapper .main .main__wrap h1 {
   width: 100%;
   max-width: 400px;
   font-size: 62px;
@@ -132,14 +132,14 @@ h6 {
 }
 
 @media (max-width: 400px) {
-  .wrapper .main__wrap h1 {
+  .wrapper .main .main__wrap h1 {
     margin-left: 0px;
     font-size: 35px;
     padding: 5px 0px;
   }
 }
 
-.wrapper .main__wrap p {
+.wrapper .main .main__wrap p {
   width: 100%;
   max-width: 500px;
   font-size: 18px;
@@ -150,7 +150,7 @@ h6 {
 }
 
 @media (max-width: 760px) {
-  .wrapper .main__wrap p {
+  .wrapper .main .main__wrap p {
     padding: 5px 20px;
     max-width: 450px;
     margin-left: 0;
@@ -158,13 +158,13 @@ h6 {
 }
 
 @media (max-width: 400px) {
-  .wrapper .main__wrap p {
+  .wrapper .main .main__wrap p {
     width: 100%;
     margin-left: 0%;
   }
 }
 
-.wrapper .main__wrap .time {
+.wrapper .main .main__wrap .time {
   width: 100%;
   max-width: 450px;
   margin-left: calc(50% - 225px);
@@ -175,36 +175,36 @@ h6 {
 }
 
 @media (max-width: 760px) {
-  .wrapper .main__wrap .time {
+  .wrapper .main .main__wrap .time {
     font-size: 35px;
   }
 }
 
-.wrapper .main__wrap .time .days {
+.wrapper .main .main__wrap .time .days {
   width: 100%;
   float: left;
   width: calc(100% / 4);
 }
 
-.wrapper .main__wrap .time .hours {
+.wrapper .main .main__wrap .time .hours {
   width: 100%;
   float: left;
   width: calc(100% / 4);
 }
 
-.wrapper .main__wrap .time .minutes {
+.wrapper .main .main__wrap .time .minutes {
   width: 100%;
   float: left;
   width: calc(100% / 4);
 }
 
-.wrapper .main__wrap .time .seconds {
+.wrapper .main .main__wrap .time .seconds {
   width: 100%;
   float: left;
   width: calc(100% / 4);
 }
 
-.wrapper .main__wrap .time label {
+.wrapper .main .main__wrap .time label {
   width: 100%;
   float: left;
   font-family: "Raleway", sans-serif;
@@ -213,13 +213,13 @@ h6 {
 }
 
 @media (max-width: 920px) {
-  .wrapper .main__wrap .time label {
+  .wrapper .main .main__wrap .time label {
     margin-left: 0px;
     font-size: 35px;
   }
 }
 
-.wrapper .main__wrap .time span {
+.wrapper .main .main__wrap .time span {
   width: 100%;
   float: left;
   font-family: "Noto Sans", sans-serif;
@@ -229,12 +229,12 @@ h6 {
 }
 
 @media (max-width: 760px) {
-  .wrapper .main__wrap .time span {
+  .wrapper .main .main__wrap .time span {
     font: 12px;
   }
 }
 
-.wrapper .main__wrap .email__form {
+.wrapper .main .main__wrap .email__form {
   width: 100%;
   max-width: 500px;
   margin-left: calc(50% - 250px);
@@ -242,20 +242,20 @@ h6 {
 }
 
 @media (max-width: 760px) {
-  .wrapper .main__wrap .email__form {
+  .wrapper .main .main__wrap .email__form {
     max-width: 400px;
     margin-left: calc(50% - 200px);
   }
 }
 
 @media (max-width: 400px) {
-  .wrapper .main__wrap .email__form {
+  .wrapper .main .main__wrap .email__form {
     width: 80%;
     margin-left: 10%;
   }
 }
 
-.wrapper .main__wrap .email__form input {
+.wrapper .main .main__wrap .email__form input {
   width: 100%;
   background-color: transparent;
   border-bottom: 1px solid #eeeeee;
@@ -265,12 +265,12 @@ h6 {
   text-transform: capitalize;
 }
 
-.wrapper .main__wrap .email__form input::placeholder {
+.wrapper .main .main__wrap .email__form input::placeholder {
   color: white;
   line-height: 30px;
 }
 
-.wrapper .main__wrap .email__form button {
+.wrapper .main .main__wrap .email__form button {
   width: 150px;
   height: 35px;
   margin-left: calc(50% - 75px);
@@ -280,7 +280,7 @@ h6 {
   box-shadow: 2px 2px 2px #454545;
 }
 
-.wrapper .main__wrap .mouse {
+.wrapper .main .main__wrap .mouse {
   margin-top: 80px;
   width: 30px;
   height: 45px;
@@ -289,7 +289,7 @@ h6 {
   border-radius: 18px;
 }
 
-.section {
+.wrapper .section {
   width: 100%;
   height: 500px;
   display: flex;
@@ -297,12 +297,12 @@ h6 {
 }
 
 @media (max-width: 760px) {
-  .section {
+  .wrapper .section {
     height: 100%;
   }
 }
 
-.section .section_wrap {
+.wrapper .section .section_wrap {
   display: inline-block;
   width: 100%;
   height: 40px;
@@ -310,37 +310,37 @@ h6 {
   padding: 70px 0px;
 }
 
-.section .section_wrap .section_left {
+.wrapper .section .section_wrap .section_left {
   width: 50%;
   float: left;
 }
 
 @media (max-width: 920px) {
-  .section .section_wrap .section_left {
+  .wrapper .section .section_wrap .section_left {
     width: 100%;
   }
 }
 
-.section .section_wrap .section_right {
+.wrapper .section .section_wrap .section_right {
   width: 50%;
   float: left;
   background: aquamarine;
 }
 
 @media (max-width: 920px) {
-  .section .section_wrap .section_right {
+  .wrapper .section .section_wrap .section_right {
     width: 100%;
   }
 }
 
-.section .section_wrap .left_content,
-.section .section_wrap .right_content {
+.wrapper .section .section_wrap .left_content,
+.wrapper .section .section_wrap .right_content {
   width: 92%;
   margin-left: 4%;
 }
 
-.section .section_wrap .left_content h3,
-.section .section_wrap .right_content h3 {
+.wrapper .section .section_wrap .left_content h3,
+.wrapper .section .section_wrap .right_content h3 {
   width: 100%;
   text-align: left;
   font-family: "Raleway", sans-serif;
@@ -350,27 +350,27 @@ h6 {
   padding: 10px 0px;
 }
 
-.section .section_wrap .left_content p,
-.section .section_wrap .right_content p {
+.wrapper .section .section_wrap .left_content p,
+.wrapper .section .section_wrap .right_content p {
   font-size: 18px;
   line-height: 25px;
   padding: 10px 0px;
 }
 
-.section .section_wrap .left_content p span,
-.section .section_wrap .right_content p span {
+.wrapper .section .section_wrap .left_content p span,
+.wrapper .section .section_wrap .right_content p span {
   color: red;
 }
 
-.section .section_wrap .left_content form,
-.section .section_wrap .right_content form {
+.wrapper .section .section_wrap .left_content form,
+.wrapper .section .section_wrap .right_content form {
   width: 100%;
   border: 1px solid red;
   margin-top: 50px;
 }
 
-.section .section_wrap .left_content form .name,
-.section .section_wrap .right_content form .name {
+.wrapper .section .section_wrap .left_content form .name,
+.wrapper .section .section_wrap .right_content form .name {
   width: 49%;
   float: left;
   color: grey;
@@ -378,8 +378,8 @@ h6 {
   border-bottom: 1px solid grey;
 }
 
-.section .section_wrap .left_content form .email,
-.section .section_wrap .right_content form .email {
+.wrapper .section .section_wrap .left_content form .email,
+.wrapper .section .section_wrap .right_content form .email {
   width: 49%;
   float: left;
   color: grey;
@@ -387,16 +387,38 @@ h6 {
   border-bottom: 1px solid grey;
 }
 
-.section .section_wrap .left_content .animation,
-.section .section_wrap .right_content .animation {
+.wrapper .section .section_wrap .left_content form .textarea,
+.wrapper .section .section_wrap .right_content form .textarea {
+  width: 49%;
+  float: left;
+  color: grey;
+  border-bottom: 1px solid grey;
+  resize: vertical;
+  min-height: 30px;
+  max-height: 70px;
+}
+
+.wrapper .section .section_wrap .left_content form button,
+.wrapper .section .section_wrap .right_content form button {
+  width: 150px;
+  height: 30px;
+  float: right;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: white;
+  background-color: red;
+  font-weight: normal;
+}
+
+.wrapper .section .section_wrap .animation {
+  margin-top: 50px;
   padding: 15px 0px;
   width: 100%;
   height: 100%;
   display: inline-block;
 }
 
-.section .section_wrap .left_content .animation .bar_row,
-.section .section_wrap .right_content .animation .bar_row {
+.wrapper .section .section_wrap .animation .bar_row {
   width: 100%;
   height: 50px;
   border-color: royalblue;
@@ -406,27 +428,22 @@ h6 {
   font-size: 12px;
 }
 
-.section .section_wrap .left_content .animation .bar_row label,
-.section .section_wrap .right_content .animation .bar_row label {
+.wrapper .section .section_wrap .animation .bar_row label {
   width: 50%;
   float: left;
 }
 
-.section .section_wrap .left_content .animation .bar_row span,
-.section .section_wrap .right_content .animation .bar_row span {
+.wrapper .section .section_wrap .animation .bar_row span {
   width: 50%;
   float: right;
   text-align: right;
 }
 
-.section .section_wrap .left_content .animation .bar_row .row_wrap,
-.section .section_wrap .right_content .animation .bar_row .row_wrap {
+.wrapper .section .section_wrap .animation .bar_row .row_wrap {
   width: 100%;
 }
 
-.section .section_wrap .left_content .animation .bar_row .row_wrap .line, .section .section_wrap .left_content .animation .bar_row .row_wrap .active,
-.section .section_wrap .right_content .animation .bar_row .row_wrap .line,
-.section .section_wrap .right_content .animation .bar_row .row_wrap .active {
+.wrapper .section .section_wrap .animation .bar_row .row_wrap .line, .wrapper .section .section_wrap .animation .bar_row .row_wrap .active {
   position: absolute;
   width: 100%;
   height: 2px;
@@ -434,8 +451,7 @@ h6 {
   border-radius: 10px;
 }
 
-.section .section_wrap .left_content .animation .bar_row .row_wrap .active,
-.section .section_wrap .right_content .animation .bar_row .row_wrap .active {
+.wrapper .section .section_wrap .animation .bar_row .row_wrap .active {
   background-color: cadetblue;
 }
 
@@ -443,12 +459,42 @@ h6 {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 120px;
+  height: 150px;
   background-color: coral;
 }
 
 .footer .footer-wrap {
   width: 100%;
+}
+
+.footer .footer-wrap .social {
+  width: 100%;
+}
+
+.footer .footer-wrap hr {
+  width: 100%;
+  height: 2px;
+  border-bottom: 1px solid bisque;
+  background-color: bisque;
+}
+
+.footer .arrow {
+  position: absolute;
+  top: 120px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .arrow a {
+  font-size: 35px;
+  color: white;
+  transform: rotate(270deg);
 }
 
 .container {
