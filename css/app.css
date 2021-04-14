@@ -123,7 +123,7 @@ h6 {
   width: 100%;
   max-width: 400px;
   font-size: 57px;
-  color: #1a1717;
+  color: brown;
   margin-left: calc(50% - 200px);
   font-weight: bold;
   text-align: center;
@@ -274,7 +274,7 @@ h6 {
   width: 150px;
   height: 35px;
   margin-left: calc(50% - 75px);
-  background-color: #ff2761;
+  background-color: #ce9032;
   color: white;
   margin-top: 20px;
   box-shadow: 2px 2px 2px #454545;
@@ -302,73 +302,73 @@ h6 {
   }
 }
 
-.wrapper .section .section_wrap {
+.wrapper .section .section__wrap {
   display: inline-block;
   width: 100%;
   height: 40px;
   padding: 70px 0px;
 }
 
-.wrapper .section .section_wrap .section_left {
+.wrapper .section .section__wrap .section__left {
   width: 50%;
   float: left;
 }
 
 @media (max-width: 920px) {
-  .wrapper .section .section_wrap .section_left {
+  .wrapper .section .section__wrap .section__left {
     width: 100%;
   }
 }
 
-.wrapper .section .section_wrap .section_right {
+.wrapper .section .section__wrap .section__right {
   width: 50%;
   float: left;
-  background: aquamarine;
 }
 
 @media (max-width: 920px) {
-  .wrapper .section .section_wrap .section_right {
+  .wrapper .section .section__wrap .section__right {
     width: 100%;
   }
 }
 
-.wrapper .section .section_wrap .left_content,
-.wrapper .section .section_wrap .right_content {
+.wrapper .section .section__wrap .left__content,
+.wrapper .section .section__wrap .right__content {
   width: 92%;
   margin-left: 4%;
 }
 
-.wrapper .section .section_wrap .left_content .title,
-.wrapper .section .section_wrap .right_content .title {
+.wrapper .section .section__wrap .left__content .title,
+.wrapper .section .section__wrap .right__content .title {
   width: 100%;
   text-align: left;
   font-family: "Raleway", sans-serif;
   font-size: 23px;
+  font-weight: 900;
   color: black;
   text-transform: uppercase;
   padding: 10px 0px;
 }
 
-.wrapper .section .section_wrap .left_content p,
-.wrapper .section .section_wrap .right_content p {
+.wrapper .section .section__wrap .left__content p,
+.wrapper .section .section__wrap .right__content p {
   font-size: 18px;
   line-height: 25px;
   padding: 10px 0px;
 }
 
-.wrapper .section .section_wrap .left_content p span,
-.wrapper .section .section_wrap .right_content p span {
-  color: red;
+.wrapper .section .section__wrap .left__content p span,
+.wrapper .section .section__wrap .right__content p span {
+  color: #ce9032;
 }
 
-.wrapper .section .section_wrap .left_content form,
-.wrapper .section .section_wrap .right_content form {
+.wrapper .section .section__wrap .left__content form,
+.wrapper .section .section__wrap .right__content form {
   width: 100%;
   margin-top: 45px;
 }
 
-.wrapper .section .section_wrap .left_content form .name,
-.wrapper .section .section_wrap .right_content form .name {
+.wrapper .section .section__wrap .left__content form .name,
+.wrapper .section .section__wrap .right__content form .name {
   width: 49%;
   float: left;
   color: grey;
@@ -376,8 +376,8 @@ h6 {
   border-bottom: 1px solid grey;
 }
 
-.wrapper .section .section_wrap .left_content form .email,
-.wrapper .section .section_wrap .right_content form .email {
+.wrapper .section .section__wrap .left__content form .email,
+.wrapper .section .section__wrap .right__content form .email {
   width: 49%;
   float: right;
   color: grey;
@@ -385,8 +385,8 @@ h6 {
   border-bottom: 1px solid grey;
 }
 
-.wrapper .section .section_wrap .left_content form .textarea,
-.wrapper .section .section_wrap .right_content form .textarea {
+.wrapper .section .section__wrap .left__content form .textarea,
+.wrapper .section .section__wrap .right__content form .textarea {
   width: 100%;
   color: grey;
   border-bottom: 1px solid grey;
@@ -395,8 +395,8 @@ h6 {
   height: 70px;
 }
 
-.wrapper .section .section_wrap .left_content form button,
-.wrapper .section .section_wrap .right_content form button {
+.wrapper .section .section__wrap .left__content form button,
+.wrapper .section .section__wrap .right__content form button {
   margin-top: 30px;
   width: 150px;
   height: 30px;
@@ -404,13 +404,13 @@ h6 {
   font-size: 15px;
   text-transform: uppercase;
   color: white;
-  background-color: red;
+  background-color: #ce9032;
   font-weight: normal;
   box-shadow: 2px 2px 2px;
 }
 
-.wrapper .section .section_wrap .left_content .animation,
-.wrapper .section .section_wrap .right_content .animation {
+.wrapper .section .section__wrap .left__content .animation,
+.wrapper .section .section__wrap .right__content .animation {
   margin-top: 50px;
   padding: 15px 0px;
   width: 100%;
@@ -418,8 +418,8 @@ h6 {
   display: inline-block;
 }
 
-.wrapper .section .section_wrap .left_content .animation .bar_row,
-.wrapper .section .section_wrap .right_content .animation .bar_row {
+.wrapper .section .section__wrap .left__content .animation .bar__row,
+.wrapper .section .section__wrap .right__content .animation .bar__row {
   width: 100%;
   height: 40px;
   margin: 1px 0px;
@@ -428,27 +428,27 @@ h6 {
   font-size: 15px;
 }
 
-.wrapper .section .section_wrap .left_content .animation .bar_row label,
-.wrapper .section .section_wrap .right_content .animation .bar_row label {
+.wrapper .section .section__wrap .left__content .animation .bar__row label,
+.wrapper .section .section__wrap .right__content .animation .bar__row label {
   width: 50%;
   float: left;
 }
 
-.wrapper .section .section_wrap .left_content .animation .bar_row span,
-.wrapper .section .section_wrap .right_content .animation .bar_row span {
+.wrapper .section .section__wrap .left__content .animation .bar__row span,
+.wrapper .section .section__wrap .right__content .animation .bar__row span {
   width: 50%;
   float: right;
   text-align: right;
 }
 
-.wrapper .section .section_wrap .left_content .animation .bar_row .row_wrap,
-.wrapper .section .section_wrap .right_content .animation .bar_row .row_wrap {
+.wrapper .section .section__wrap .left__content .animation .bar__row .row__wrap,
+.wrapper .section .section__wrap .right__content .animation .bar__row .row__wrap {
   width: 100%;
 }
 
-.wrapper .section .section_wrap .left_content .animation .bar_row .row_wrap .line, .wrapper .section .section_wrap .left_content .animation .bar_row .row_wrap .active,
-.wrapper .section .section_wrap .right_content .animation .bar_row .row_wrap .line,
-.wrapper .section .section_wrap .right_content .animation .bar_row .row_wrap .active {
+.wrapper .section .section__wrap .left__content .animation .bar__row .row__wrap .line, .wrapper .section .section__wrap .left__content .animation .bar__row .row__wrap .active,
+.wrapper .section .section__wrap .right__content .animation .bar__row .row__wrap .line,
+.wrapper .section .section__wrap .right__content .animation .bar__row .row__wrap .active {
   position: absolute;
   bottom: 8px;
   width: 100%;
@@ -457,8 +457,8 @@ h6 {
   border-radius: 10px;
 }
 
-.wrapper .section .section_wrap .left_content .animation .bar_row .row_wrap .active,
-.wrapper .section .section_wrap .right_content .animation .bar_row .row_wrap .active {
+.wrapper .section .section__wrap .left__content .animation .bar__row .row__wrap .active,
+.wrapper .section .section__wrap .right__content .animation .bar__row .row__wrap .active {
   background-color: cadetblue;
 }
 
@@ -467,18 +467,18 @@ h6 {
   justify-content: center;
   width: 100%;
   height: 150px;
-  background-color: coral;
+  background-color: #ce9032;
 }
 
-.wrapper .footer .footer-wrap {
+.wrapper .footer .footer__wrap {
   width: 100%;
 }
 
-.wrapper .footer .footer-wrap .social {
+.wrapper .footer .footer__wrap .social {
   width: 100%;
 }
 
-.wrapper .footer .footer-wrap hr {
+.wrapper .footer .footer__wrap hr {
   width: 100%;
   height: 2px;
   border-bottom: 1px solid bisque;
@@ -492,7 +492,7 @@ h6 {
   width: 50px;
   height: 50px;
   border-radius: 30px;
-  background-color: red;
+  background-color: #ce9032;
   display: flex;
   justify-content: center;
   align-items: center;
