@@ -122,7 +122,7 @@ h6 {
 .wrapper .main .main__wrap h1 {
   width: 100%;
   max-width: 400px;
-  font-size: 62px;
+  font-size: 57px;
   color: #1a1717;
   margin-left: calc(50% - 200px);
   font-weight: bold;
@@ -149,11 +149,11 @@ h6 {
   padding: 15px 0px;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 720px) {
   .wrapper .main .main__wrap p {
     padding: 5px 20px;
     max-width: 450px;
-    margin-left: 0;
+    margin-left: calc(50% - 225px);
   }
 }
 
@@ -174,9 +174,9 @@ h6 {
   text-shadow: 1px 1px 5px black;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 400px) {
   .wrapper .main .main__wrap .time {
-    font-size: 35px;
+    margin-left: 0px;
   }
 }
 
@@ -208,11 +208,11 @@ h6 {
   width: 100%;
   float: left;
   font-family: "Raleway", sans-serif;
-  font-size: 62px;
+  font-size: 57px;
   text-align: center;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 720px) {
   .wrapper .main .main__wrap .time label {
     margin-left: 0px;
     font-size: 35px;
@@ -228,9 +228,9 @@ h6 {
   padding: 5px 0px;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 720px) {
   .wrapper .main .main__wrap .time span {
-    font: 12px;
+    font: 15px;
   }
 }
 
@@ -238,10 +238,10 @@ h6 {
   width: 100%;
   max-width: 500px;
   margin-left: calc(50% - 250px);
-  margin-top: 120px;
+  margin-top: 90px;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 720px) {
   .wrapper .main .main__wrap .email__form {
     max-width: 400px;
     margin-left: calc(50% - 200px);
@@ -283,7 +283,7 @@ h6 {
 .wrapper .main .main__wrap .mouse {
   margin-top: 80px;
   width: 30px;
-  height: 45px;
+  height: 50px;
   border: 1px solid white;
   margin-left: calc(50% - 15px);
   border-radius: 18px;
@@ -296,9 +296,9 @@ h6 {
   justify-content: center;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 720px) {
   .wrapper .section {
-    height: 100%;
+    height: 900px;
   }
 }
 
@@ -306,7 +306,6 @@ h6 {
   display: inline-block;
   width: 100%;
   height: 40px;
-  height: 400px;
   padding: 70px 0px;
 }
 
@@ -339,8 +338,8 @@ h6 {
   margin-left: 4%;
 }
 
-.wrapper .section .section_wrap .left_content h3,
-.wrapper .section .section_wrap .right_content h3 {
+.wrapper .section .section_wrap .left_content .title,
+.wrapper .section .section_wrap .right_content .title {
   width: 100%;
   text-align: left;
   font-family: "Raleway", sans-serif;
@@ -365,8 +364,7 @@ h6 {
 .wrapper .section .section_wrap .left_content form,
 .wrapper .section .section_wrap .right_content form {
   width: 100%;
-  border: 1px solid red;
-  margin-top: 50px;
+  margin-top: 45px;
 }
 
 .wrapper .section .section_wrap .left_content form .name,
@@ -381,7 +379,7 @@ h6 {
 .wrapper .section .section_wrap .left_content form .email,
 .wrapper .section .section_wrap .right_content form .email {
   width: 49%;
-  float: left;
+  float: right;
   color: grey;
   padding: 5px 0px;
   border-bottom: 1px solid grey;
@@ -389,17 +387,17 @@ h6 {
 
 .wrapper .section .section_wrap .left_content form .textarea,
 .wrapper .section .section_wrap .right_content form .textarea {
-  width: 49%;
-  float: left;
+  width: 100%;
   color: grey;
   border-bottom: 1px solid grey;
-  resize: vertical;
-  min-height: 30px;
-  max-height: 70px;
+  resize: none;
+  padding: 10px 0px;
+  height: 70px;
 }
 
 .wrapper .section .section_wrap .left_content form button,
 .wrapper .section .section_wrap .right_content form button {
+  margin-top: 30px;
   width: 150px;
   height: 30px;
   float: right;
@@ -408,9 +406,11 @@ h6 {
   color: white;
   background-color: red;
   font-weight: normal;
+  box-shadow: 2px 2px 2px;
 }
 
-.wrapper .section .section_wrap .animation {
+.wrapper .section .section_wrap .left_content .animation,
+.wrapper .section .section_wrap .right_content .animation {
   margin-top: 50px;
   padding: 15px 0px;
   width: 100%;
@@ -418,44 +418,51 @@ h6 {
   display: inline-block;
 }
 
-.wrapper .section .section_wrap .animation .bar_row {
+.wrapper .section .section_wrap .left_content .animation .bar_row,
+.wrapper .section .section_wrap .right_content .animation .bar_row {
   width: 100%;
-  height: 50px;
-  border-color: royalblue;
+  height: 40px;
   margin: 1px 0px;
   position: relative;
-  font-family: "Raleway", sans-serif;
-  font-size: 12px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 15px;
 }
 
-.wrapper .section .section_wrap .animation .bar_row label {
+.wrapper .section .section_wrap .left_content .animation .bar_row label,
+.wrapper .section .section_wrap .right_content .animation .bar_row label {
   width: 50%;
   float: left;
 }
 
-.wrapper .section .section_wrap .animation .bar_row span {
+.wrapper .section .section_wrap .left_content .animation .bar_row span,
+.wrapper .section .section_wrap .right_content .animation .bar_row span {
   width: 50%;
   float: right;
   text-align: right;
 }
 
-.wrapper .section .section_wrap .animation .bar_row .row_wrap {
+.wrapper .section .section_wrap .left_content .animation .bar_row .row_wrap,
+.wrapper .section .section_wrap .right_content .animation .bar_row .row_wrap {
   width: 100%;
 }
 
-.wrapper .section .section_wrap .animation .bar_row .row_wrap .line, .wrapper .section .section_wrap .animation .bar_row .row_wrap .active {
+.wrapper .section .section_wrap .left_content .animation .bar_row .row_wrap .line, .wrapper .section .section_wrap .left_content .animation .bar_row .row_wrap .active,
+.wrapper .section .section_wrap .right_content .animation .bar_row .row_wrap .line,
+.wrapper .section .section_wrap .right_content .animation .bar_row .row_wrap .active {
   position: absolute;
+  bottom: 8px;
   width: 100%;
-  height: 2px;
+  height: 4px;
   background-color: #5454c0;
   border-radius: 10px;
 }
 
-.wrapper .section .section_wrap .animation .bar_row .row_wrap .active {
+.wrapper .section .section_wrap .left_content .animation .bar_row .row_wrap .active,
+.wrapper .section .section_wrap .right_content .animation .bar_row .row_wrap .active {
   background-color: cadetblue;
 }
 
-.footer {
+.wrapper .footer {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -463,22 +470,22 @@ h6 {
   background-color: coral;
 }
 
-.footer .footer-wrap {
+.wrapper .footer .footer-wrap {
   width: 100%;
 }
 
-.footer .footer-wrap .social {
+.wrapper .footer .footer-wrap .social {
   width: 100%;
 }
 
-.footer .footer-wrap hr {
+.wrapper .footer .footer-wrap hr {
   width: 100%;
   height: 2px;
   border-bottom: 1px solid bisque;
   background-color: bisque;
 }
 
-.footer .arrow {
+.wrapper .footer .arrow {
   position: absolute;
   top: 120px;
   right: 40px;
@@ -491,20 +498,20 @@ h6 {
   align-items: center;
 }
 
-.footer .arrow a {
+.wrapper .footer .arrow a {
   font-size: 35px;
   color: white;
   transform: rotate(270deg);
 }
 
-.container {
+.wrapper .container {
   width: 100%;
   max-width: 1200px;
   height: 100%;
 }
 
-@media (max-width: 760px) {
-  .container {
+@media (max-width: 720px) {
+  .wrapper .container {
     width: 98%;
   }
 }

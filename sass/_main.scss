@@ -9,8 +9,7 @@
         background-size: cover;
         background-position: center center;
         display: flex;
-        justify-content: center; 
-    
+        justify-content: center;     
         .main__wrap {
             width: 100%;
             padding: 10% 0px 0px 0px;
@@ -50,7 +49,7 @@
                 @media (max-width: $md) {
                     padding: 5px 20px;
                     max-width: 450px;
-                    margin-left:0;
+                    margin-left: calc(50% - 225px);
                 }
                 @media (max-width: $sm) {
                     width: 100%;
@@ -65,8 +64,8 @@
                 color: rgb(255, 255, 255);
                 text-transform: uppercase;
                 text-shadow: 1px 1px 5px black;
-                @media (max-width: $md) {
-                    font-size: $medium;
+                @media (max-width: $sm) {
+                    margin-left: 0px;;
                 }
                 .days {
                     width: 100%;
@@ -94,7 +93,7 @@
                     font-family: $font-Raleway;
                     font-size: $large;
                     text-align: center;
-                    @media (max-width: $xl) {
+                    @media (max-width: $md) {
                         margin-left: 0px;
                         font-size: $medium;
                     }
@@ -115,8 +114,7 @@
                 width: 100%;
                 max-width: 500px;
                 margin-left: calc(50% - 250px);
-                margin-top: 120px;
-                
+                margin-top: 90px;                
                 @media (max-width: $md) {
                     max-width: 400px;
                     margin-left: calc(50% - 200px);
@@ -151,7 +149,7 @@
             .mouse {
                 margin-top: 80px;
                 width: 30px;
-                height: 45px;
+                height: 50px;
                 border: 1px solid white;
                 margin-left: calc(50% - 15px);
                 border-radius: 18px;
@@ -165,13 +163,12 @@
         display: flex;
         justify-content: center;
         @media (max-width: $md) {
-            height: 100%;
+            height: 900px;
         }
         .section_wrap {
             display: inline-block;
             width: 100%;
             height: 40px;
-            height: 400px;
             padding: 70px 0px;
             .section_left {
                 width: 50%;
@@ -192,7 +189,7 @@
             .right_content {
                 width: 92%;
                 margin-left: 4%;
-                h3 {    //title
+                .title {    //title
                     width: 100%;
                     text-align: left;
                     font-family: $font-Raleway;
@@ -201,8 +198,7 @@
                     text-transform: uppercase;
                     padding: 10px 0px;
                 }
-                p {
-                        //font-family: $font-Raleway;
+                p {                        
                     font-size: $small;
                     line-height: 25px;
                     padding: 10px 0px;
@@ -211,9 +207,8 @@
                     }
                 }
                 form {
-                    width: 100%;
-                    border: 1px solid red;
-                    margin-top: 50px;
+                    width: 100%;                   
+                    margin-top: 45px;
                     .name {
                         width: 49%;
                         float: left;
@@ -224,22 +219,22 @@
                     }
                     .email {
                         width: 49%;
-                        float: left;
+                        float: right;
                         color: grey;
                         padding: 5px 0px;
                         border-bottom: 1px solid grey;
                     }
                     .textarea {
-                        width: 49%;
-                        float: left;
+                        width: 100%;
                         color: grey;
                         border-bottom: 1px solid grey;
-                        resize: vertical;
-                        min-height: 30px ;
-                        max-height: 70px;
+                        resize: none;
+                        padding: 10px 0px;
+                        height: 70px;
 
                     }
                     button {
+                        margin-top: 30px;
                         width: 150px;
                         height: 30px;
                         float: right;
@@ -248,15 +243,9 @@
                         color: white;
                         background-color: $buttons;
                         font-weight: normal;
-                    
-                    }
-
+                        box-shadow: 2px 2px 2px;                    
                     }
                 }
-                
-            
-
-
                 .animation {
                     margin-top: 50px;
                     padding: 15px 0px;
@@ -265,11 +254,10 @@
                     display: inline-block;
                     .bar_row{
                         width: 100%;
-                        height: 50px;
-                        border-color: royalblue;
+                        height: 40px;
                         margin: 1px 0px;
                         position: relative;
-                        font-family: $font-Raleway;
+                        font-family: $font-Noto-sans;
                         font-size: $tiny;
                         label {
                             width: 50%;
@@ -284,8 +272,9 @@
                             width: 100%;
                             .line {
                                 position: absolute;
+                                bottom: 8px;
                                 width: 100%;
-                                height: 2px;
+                                height: 4px;
                                 background-color: rgb(84, 84, 192);
                                 border-radius: 10px;
                             }
@@ -339,11 +328,12 @@
     }
 
 
-    .container {
-    width: 100%;
-    max-width: 1200px;
-    height: 100%;
-    @media (max-width: $md) {
-        width: 98%;
-    }
+        .container {
+        width: 100%;
+        max-width: 1200px;
+        height: 100%;
+        @media (max-width: $md) {
+            width: 98%;
+        }
+     }    
 }
