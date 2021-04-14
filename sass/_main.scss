@@ -163,7 +163,7 @@
                     margin-left: calc(50% - 1.5px);
                     animation-name: wheel;
                     animation-duration: 1s;
-                    animation-delay: 2s;
+                    // animation-delay: 2s;
                     animation-iteration-count: infinite;
                     animation-timing-function: ease-in-out;
 
@@ -298,6 +298,9 @@
                             .active {
                                 @extend .line;
                                 background-color: rgb(161, 207, 245);
+                                animation-name: bars;
+                                animation-duration: 3s;
+                                animation-timing-function: ease-out;
                             }
                         }
                     }
@@ -397,6 +400,18 @@
         }
     }
 }
+
+@keyframes bars {
+    0% { 
+        width: 0%;
+        background-color: red;
+    }
+
+    100% {
+        background-color:  green;
+    }
+} 
+
 
 @keyframes wheel {
     0% { 

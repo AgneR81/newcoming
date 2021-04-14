@@ -298,7 +298,6 @@ h6 {
   margin-left: calc(50% - 1.5px);
   animation-name: wheel;
   animation-duration: 1s;
-  animation-delay: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
@@ -474,6 +473,9 @@ h6 {
 .wrapper .section .section__wrap .left__content .animation .bar__row .row__wrap .active,
 .wrapper .section .section__wrap .right__content .animation .bar__row .row__wrap .active {
   background-color: #a1cff5;
+  animation-name: bars;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
 }
 
 .wrapper .footer {
@@ -582,6 +584,16 @@ h6 {
 .wrapper .footer .arrow a {
   font-size: 35px;
   color: white;
+}
+
+@keyframes bars {
+  0% {
+    width: 0%;
+    background-color: red;
+  }
+  100% {
+    background-color: green;
+  }
 }
 
 @keyframes wheel {
