@@ -293,9 +293,14 @@ h6 {
   display: inline-block;
   width: 3px;
   height: 15px;
-  margin-top: 5px;
-  background-color: black;
+  margin-top: 8px;
+  background-color: brown;
   margin-left: calc(50% - 1.5px);
+  animation-name: wheel;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .wrapper .section {
@@ -577,6 +582,15 @@ h6 {
 .wrapper .footer .arrow a {
   font-size: 35px;
   color: white;
+}
+
+@keyframes wheel {
+  0% {
+    margin-top: 8px;
+  }
+  100% {
+    margin-top: 15px;
+  }
 }
 
 .container {
