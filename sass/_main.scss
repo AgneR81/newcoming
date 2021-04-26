@@ -23,16 +23,40 @@
                 display: flex;
                 justify-content: space-between;
                 @media (max-width: $md) {
-                    display: none;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    display: block;
+                    background-color: burlywood;   
+                    height: 1000px;  
+                    transform: translateX(100%);
+                    
                 }
                 a {
                     color: inherit;
                     font-size: $normal;
-                    padding: 0px 15px 0 px 0px;
+                    padding: 18px 15px 0px 0px;
                     &:last-of-type {
                          padding: 18px 0px 0px 0px;
                     }
+                    @media (max-width: $md) {
+                        display: block;
+                        color: black;
+                        text-align: center;
+                        font-weight: bold;
+                        font-size: $medium;
+                        &:first-of-type {
+                            margin-top: 150px;
+                        }
+                    }
+                    
                 }    
+            }
+            .on {
+                transform: translateX(0%);
+                transition: 1s;
             }
             .burger {
                 display: none;
